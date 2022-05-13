@@ -1,138 +1,178 @@
-h1,h2,h3,h4,h5,h6,a,p{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
 
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  margin: 0;
+  padding: 0;
 }
 button {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 body {
-
-    background-color:#0d0905;
-    color:white;
-    font-family: sans-serif;
-
+  background-color: #0d0905;
+  color: white;
+  font-family: sans-serif;
 }
 
+header,
+footer {
+  padding: 32px;
+}
 
-header,footer {
+ul {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
 
-    padding: 32px;
+a {
+  color: antiquewhite;
+}
+
+a:hover {
+  color: aquamarine;
 }
 
 .header-top {
+  display: -webkit-box;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-bottom: gold 1px solid;
-    margin-bottom: 8px;
-    padding-bottom: 8px;
+  display: -ms-flexbox;
 
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: gold 1px solid;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
-.container{
-
-    max-width: 1024px;
-    padding: 16px 32px;
-    border: 1px solid white;
-    margin: 0 auto;
+.container {
+  max-width: 1024px;
+  padding: 16px 32px;
+  border: 1px solid white;
+  margin: 0 auto;
 }
 
-.icon-small{
-color: white;
-    height: 32px;
-    width: 32px;
+.icon-small {
+  color: white;
+  height: 32px;
+  width: 32px;
 }
 
+.icon-button {
+  display: -webkit-box;
 
-.icon-button{
+  display: -ms-flexbox;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.text-yellow{
-
-    color: gold;
+.text-yellow {
+  color: gold;
 }
 
-.sub-heading{
-
-    letter-spacing: 4px;
+.sub-heading {
+  letter-spacing: 4px;
 }
 
 .content-container {
-
-    font-size: 64px;
-    font-weight: 900;
-
+  font-size: 64px;
+  font-weight: 900;
 }
 
 .circle-number {
-
-    height: 72px;
-    width: 72px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 32px;
-    
-}
-
-.circle-number span {
-
-    padding-top: 8px;
-    
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 32px;
 }
 
 .circle-red {
-    background-color: red;
+  background-color: red;
 }
 
 .circle-blue {
-    background-color: blue;
+  background-color: blue;
 }
 .circle-purple {
-
-    background-color: purple;
+  background-color: purple;
 }
 
 .toggle-wrap {
+  display: -webkit-box;
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0px 32px 0px 32px;
-    border-bottom: 2px solid gold;
-    border-left: 2px solid gold;
-    border-right: 2px solid gold;
-    padding: 32px;
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0px 32px 0px 32px;
+  border-bottom: 2px solid gold;
+  border-left: 2px solid gold;
+  border-right: 2px solid gold;
+  padding: 32px;
 }
 
 .toggle-text {
-
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .toggle-button {
+  display: -webkit-box;
 
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 footer {
-    color: grey;
-    font-weight: 900;
-    text-align: center;
+  color: grey;
+  font-weight: 900;
+  text-align: center;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
