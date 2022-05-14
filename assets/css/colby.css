@@ -1,0 +1,46 @@
+.border-section {
+  margin: 0 auto 64px;
+  padding: 32px;
+  border: 1px #ffffff solid;
+  border-radius: 8px;
+}
+
+.border-section-two {
+  padding: 32px;
+  border: 1px green solid;
+  border-radius: 8px;
+  background-color: #010b04;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.space-y * {
+  margin-bottom: 8px;
+}
+
+.form-label {
+  font-size: 0.85rem;
+}
+
+.input-text {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.button {
+  padding: 8px 12px;
+  color: #0d0905;
+  background-color: beige;
+  border-radius: 4px;
+}
+.button:hover {
+  background-color: aqua;
+}
