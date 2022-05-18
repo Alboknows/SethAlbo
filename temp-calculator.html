@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Seth Albo | Motion Graphics</title>
+    <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
+    <link rel="icon" href="assets/img/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=100" />
+    <link rel="stylesheet" href="assets/css/colby.css?v=700" />
+    <meta name="msapplication-TileImage" content="assets/img/favicon.png" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div class="header-top">
+          <h1>Seth Albo</h1>
+          <nav class="icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-small" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
+            </svg>
+            <span>Contact Me</span>
+          </nav>
+        </div>
+        <p class="text-yellow sub-heading">Motion Graphics Designer</p>
+      </header>
+      <section>
+        <div class="border-section space-y">
+          <h3>JS Temperature Calculator</h3>
+          <div class="grid grid-cols-2">
+            <div class="border-section-two space-y">
+              <div>
+                <label for="celsius" class="form-label">
+                  <input class="temperature-uom" type="radio" name="temperature_uom" value="c" />
+                  Fahrenheit to Celsius
+                </label>
+              </div>
+              <div>
+                <label for="celsius" class="form-label">
+                  <input id="celsius" class="temperature-uom" type="radio" name="temperature_uom" value="f" />
+                  Celsius to Fahrenheit
+                </label>
+              </div>
+              <div>
+                <input id="temperature-value" class="input-text" type="text" name="temperature_value" placeholder="Enter the Value" />
+              </div>
+              <div>
+                <button id="temperature-button" class="button" type="button">Convert</button>
+                <button onclick="resetResults()" id="temperature-reset-button" class="button" type="button">Reset</button>
+              </div>
+            </div>
+            <div class="border-section-two space-y">
+              <p>Results:</p>
+              <div id="temperature-results">
+                <p id="no-temp-results">No Conversions Yet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>© Seth Albo 2022 All Rights Reserved</p>
+        <div style="text-align: center">
+          <a href="/">Home</a>
+          <a href="/resources.html">Resources</a>
+          <a href="/jsexamples.html">JS Examples</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="assets/js/colby.js?v=103"></script>
+  </body>
+</html>
