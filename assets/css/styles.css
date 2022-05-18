@@ -5,14 +5,7 @@
 * Browsers: last 4 version
 */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p {
+h1,h2,h3,h4,h5,h6,a,p {
   margin: 0;
   padding: 0;
 }
@@ -25,6 +18,10 @@ body {
   background-color: #0d0905;
   color: white;
   font-family: sans-serif;
+}
+
+.toggle-number{
+  color: #0d0905;
 }
 
 header,
@@ -91,6 +88,7 @@ a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: white;
 }
 
 .text-yellow {
@@ -106,9 +104,13 @@ a:hover {
   font-weight: 900;
 }
 
+.toggle-text{
+  cursor:pointer;
+}
+
 .circle-number {
-  height: 72px;
-  width: 72px;
+  height: 108px;
+  width: 108px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,18 +122,42 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 32px;
+  font-size: larger;
 }
 
 .circle-red {
-  background-color: red;
+  background-color: #eb3c3f;
 }
 
 .circle-blue {
-  background-color: blue;
+  background-color: #115c98;
 }
 .circle-purple {
-  background-color: purple;
+  background-color: #a5439a;
 }
+.circle-yellow {
+  background-color: #ffce0c;
+}
+.circle-green{
+  background-color: #00ab4f;
+}
+.video{
+  display: block;
+  margin: 16px auto;
+  border-radius: 16px;
+  
+}
+
+.lm-panel {
+  
+  margin: 0px 16px;
+  padding: 0px 16px;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+  max-height: 0;
+  
+}
+
 
 .toggle-wrap {
   display: -webkit-box;
@@ -147,15 +173,38 @@ a:hover {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0px 32px 0px 32px;
-  border-bottom: 2px solid gold;
-  border-left: 2px solid gold;
-  border-right: 2px solid gold;
-  padding: 32px;
+  margin: 0px 16px 0px 16px;
+  border-bottom: 4px solid gold;
+  border-left: 4px solid gold;
+  border-right: 4px solid gold;
+  padding: 16px;
+}
+
+.toggle-border{
+    display: -webkit-box;
+    
+      display: -ms-flexbox;
+    
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0px 16px 0px 16px;
+      border-bottom: 0px solid gold;
+      border-left: 4px solid gold;
+      border-right: 4px solid gold;
+      padding: 16px;
 }
 
 .toggle-text {
   margin-top: 8px;
+  font-weight: 900;
+  font-size: larger;
 }
 
 .toggle-button {
@@ -170,6 +219,7 @@ a:hover {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  transition: .4s;
 }
 
 footer {
