@@ -10,8 +10,8 @@
     <link rel="apple-touch-icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/styles.css?v=100" />
-    <link rel="stylesheet" href="assets/css/modal.css?v=100" />
     <meta name="msapplication-TileImage" content="assets/img/favicon.png" />
+    <script src="./dist/index.js" type="module"></script>
   </head>
   <body>
     <main class="container">
@@ -29,23 +29,8 @@
         </div>
         <p class="text-yellow sub-heading">Motion Graphics Designer</p>
       </header>
-      <section>
-        <div class="border-section space-y" style="text-align: center">
-          <h3>Simple JS Modal</h3>
-        </div>
-        <div style="text-align: center">
-          <a id="modal-trigger" href="#modal" class="link-trigger">Fire Modal</a>
-        </div>
-        <div id="modal">
-          <!-- this is our modal window -->
-          <div class="content">
-            <h2>Success!</h2>
-            <p>The Modal Works - Respect! You can click 'close' or hit the Escape button on your keyboard.</p>
 
-            <button id="close-modal">Close</button>
-          </div>
-        </div>
-      </section>
+      <simple-modal></simple-modal>
 
       <footer>
         <p>© Seth Albo 2022 All Rights Reserved</p>
@@ -56,7 +41,7 @@
         </div>
       </footer>
     </main>
+
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/modal.js"></script>
   </body>
 </html>
