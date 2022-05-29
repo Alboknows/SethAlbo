@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Seth Albo | Motion Graphics</title>
+    <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
+    <link rel="icon" href="assets/img/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=1000" />
+    <link rel="stylesheet" href="assets/css/flexbox-layouts.css?v=636464" />
+    <link rel="stylesheet" href="assets/css/layouts-base.css?v=636464" />
+    <meta name="msapplication-TileImage" content="assets/img/favicon.png" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div class="header-top">
+          <h1>Seth Albo</h1>
+          <nav class="icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-small" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
+            </svg>
+            <span> Contact Me </span>
+          </nav>
+        </div>
+        <p class="text-yellow sub-heading">Motion Graphics Designer</p>
+      </header>
+      <section class="content-container">
+        <ul>
+          <li>
+            <h2>Flexbox</h2>
+            <p class="note">applied: flex, justify center for horizontal, align-items for vertical, set to wrap items</p>
+            <pre>
+            .flex {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            </pre>
+            <div id="box-1" class="row flex">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big green">3</div>
+              <div class="box box-4 box-big blue">4</div>
+              <div class="box box-5 box-big yellow">5</div>
+              <div class="box box-6 box-big red">6</div>
+              <div class="box box-7 box-big blue">7</div>
+              <div class="box box-8 box-big yellow">8</div>
+              <div class="box box-9 box-big blue">9</div>
+            </div>
+            <p class="note">same thing with fewer elements, not enough to take up width of the container , space between applied</p>
+            <pre>
+            .flex-space-between {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+            }
+            </pre>
+            <div id="box-2" class="row flex-space-between">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big green">3</div>
+            </div>
+
+            <p class="note">same as previous space around applied</p>
+            <pre>
+            .flex-space-around {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+            }
+            </pre>
+            <div id="box-3" class="row flex-space-around">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big green">3</div>
+            </div>
+
+            <p class="note">same as previous space evenly applied</p>
+            <pre>
+            .flex-space-evenly {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            </pre>
+            <div id="box-4" class="row flex-space-evenly">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big green">3</div>
+            </div>
+
+            <p class="note">same as previous aligned to end</p>
+            <pre>
+            .flex-end {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            </pre>
+            <div id="box-5" class="row flex-end">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big green">3</div>
+            </div>
+
+            <p class="note">same as previous aligned to beginning</p>
+            <pre>
+            .flex-start {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            </pre>
+            <div id="box-6" class="row flex-start">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big green">3</div>
+            </div>
+            <p class="note">same as previous aligned to beginning with gap applied</p>
+            <pre>
+            .flex-start-gap {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 16px;
+            }
+            </pre>
+            <div id="box-7" class="row flex-start-gap">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big green">3</div>
+            </div>
+
+            <p class="note">same as previous but vertical top alignment with elements of different heights</p>
+            <pre>
+            .flex-right-top {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            </pre>
+            <div id="box-8" class="row flex-right-top">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big blue">3</div>
+              <div class="box-3 box-small yellow">4</div>
+            </div>
+
+            <p class="note">same as previous but vertical center alignment with elements of different heights</p>
+            <pre>
+            .flex-right-center {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            </pre>
+            <div id="box-9" class="row flex-right-center">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big blue">3</div>
+              <div class="box-3 box-small yellow">4</div>
+            </div>
+
+            <p class="note">same as previous but vertical bottom alignment with elements of different heights</p>
+            <pre>
+            .flex-right-bottom {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            </pre>
+            <div id="box-10" class="row flex-right-bottom">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big blue">3</div>
+              <div class="box-3 box-small yellow">4</div>
+            </div>
+
+            <p class="note">same as previous but vertical bottom alignment with elements of different heights, with one element that aligns itself</p>
+            <pre>
+            .flex-right-bottom {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .align-top {
+                align-self: flex-start;
+            }
+            </pre>
+            <div id="box-10" class="row flex-right-bottom">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box-2 box-small red align-top">2</div>
+              <div class="box box-3 box-big blue">3</div>
+              <div class="box-3 box-small yellow">4</div>
+            </div>
+
+            <p class="note">This is set to make the one of the boxes take up ALL EXTRA horizontal space</p>
+            <pre>
+            .flex-expand {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 16px;
+            }
+            .flex-expand-item {
+                flex: 1;
+            }
+            </pre>
+            <div id="box-11" class="row flex-expand">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big blue flex-expand-item">3*</div>
+              <div class="box box-3 box-big yellow">4</div>
+            </div>
+
+            <p class="note">Same as previous, This is set to make the TWO of the boxes share ALL EXTRA horizontal space</p>
+            <pre>
+            .flex-expand {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 16px;
+            }
+            .flex-expand-item {
+                flex: 1;
+            }
+            </pre>
+            <div id="box-11" class="row flex-expand">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big blue flex-expand-item">3*</div>
+              <div class="box box-3 box-big yellow flex-expand-item">4*</div>
+            </div>
+
+            <p class="note">applied: flex, flex direction of column,</p>
+            <pre>
+            .flex-col {
+              display: flex;
+              flex-direction: column;
+            }
+            </pre>
+            <div id="box-300" class="row flex-col">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-3 box-big green">3</div>
+              <div class="box box-4 box-big blue">4</div>
+              <div class="box box-5 box-big yellow">5</div>
+              <div class="box box-6 box-big red">6</div>
+              <div class="box box-7 box-big blue">7</div>
+              <div class="box box-8 box-big yellow">8</div>
+              <div class="box box-9 box-big blue">9</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <p>© Seth Albo 2022 All Rights Reserved</p>
+        <div style="text-align: center">
+          <a href="/">Home</a>
+          <a href="/resources.html">Resources</a>
+          <a href="/jsexamples.html">JS Examples</a>
+          <a href="/flexbox-layouts.html">Flexbox Examples</a>
+          <a href="/grid-layouts.html">Grid Examples</a>
+        </div>
+      </footer>
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
