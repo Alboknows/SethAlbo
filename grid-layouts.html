@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Seth Albo | Motion Graphics</title>
+    <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
+    <link rel="icon" href="assets/img/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=1000" />
+    <link rel="stylesheet" href="assets/css/grid-layouts.css?v=636464" />
+    <link rel="stylesheet" href="assets/css/flexbox-layouts.css?v=636464" />
+    <link rel="stylesheet" href="assets/css/layouts-base.css?v=636464" />
+    <meta name="msapplication-TileImage" content="assets/img/favicon.png" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div class="header-top">
+          <h1>Seth Albo</h1>
+          <nav class="icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-small" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
+            </svg>
+            <span> Contact Me </span>
+          </nav>
+        </div>
+        <p class="text-yellow sub-heading">Motion Graphics Designer</p>
+      </header>
+      <section class="content-container">
+        <ul>
+          <li>
+            <h2>Grid</h2>
+            <p class="note">applied: grid with 2 evenly sized columns</p>
+            <pre>
+            .grid-two-col {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            </pre>
+            <div id="box-1" class="row grid-two-col">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+            </div>
+            <p class="note">applied: grid with 2 evenly sized columns with a gap</p>
+            <pre>
+            .grid-two-col-gap {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 8px;
+            }
+            </pre>
+            <div id="box-1" class="row grid-two-col-gap">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+            </div>
+            <p class="note">applied: grid with 3 evenly sized columns with a gap, notice it will still enforce the columns even though thre isnt a 3rd one to fill it</p>
+            <pre>
+            .grid-two-col-gap {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 8px;
+            }
+            </pre>
+            <div id="box-1" class="row grid-three-col-gap">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+            </div>
+            <p class="note">same thing with a 3rd div added</p>
+            <div id="box-1" class="row grid-three-col-gap">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-2 box-big blue">3</div>
+            </div>
+
+            <p class="note">You can also set up rows using grid</p>
+            <pre>
+            .grid-two-row-gap {
+                display: grid;
+                grid-template-rows: repeat(3, minmax(0, 1fr));
+                gap: 8px;
+            }
+            </pre>
+            <div id="box-1" class="row grid-three-row-gap">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+            </div>
+            <p class="note">same thing with a 3rd div added</p>
+            <div id="box-1" class="row grid-three-row-gap">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-2 box-big blue">3</div>
+            </div>
+
+            <p class="note">You can also set up columns and rows together using grid</p>
+            <p class="note">example with: six child elements</p>
+            <pre>
+            .grid-three-by-three {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                grid-template-rows: repeat(3, minmax(0, 1fr));
+                gap: 8px;
+            }
+            </pre>
+            <div id="box-1" class="row grid-three-by-three">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-1 box-big yellow">3</div>
+              <div class="box box-2 box-big blue">4</div>
+              <div class="box box-2 box-big green">5</div>
+              <div class="box box-2 box-big red">6</div>
+            </div>
+            <p class="note">example with: eight child elements</p>
+            <div id="box-1" class="row grid-three-by-three">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-1 box-big yellow">3</div>
+              <div class="box box-2 box-big blue">4</div>
+              <div class="box box-2 box-big green">5</div>
+              <div class="box box-2 box-big red">6</div>
+              <div class="box box-2 box-big yellow">7</div>
+              <div class="box box-2 box-big blue">8</div>
+            </div>
+            <p class="note">example with: nine child elements</p>
+            <div id="box-1" class="row grid-three-by-three">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-1 box-big yellow">3</div>
+              <div class="box box-2 box-big blue">4</div>
+              <div class="box box-2 box-big green">5</div>
+              <div class="box box-2 box-big red">6</div>
+              <div class="box box-2 box-big yellow">7</div>
+              <div class="box box-2 box-big blue">8</div>
+              <div class="box box-2 box-big green">9</div>
+            </div>
+
+            <p class="note">same grid, but when you want to split areas unevenly within the grid</p>
+
+            <pre>
+            .grid-three-by-three {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                grid-template-rows: repeat(3, minmax(0, 1fr));
+                gap: 8px;
+            }
+            .change-5 {
+                grid-column: span 2 / span 2;
+                grid-row: span 2 / span 2;
+            }
+            </pre>
+            <div id="box-1" class="row grid-three-by-three">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-1 box-big yellow">3</div>
+              <div class="box box-2 box-big blue">4</div>
+              <div class="box box-2 box-big green change-5">5</div>
+              <div class="box box-2 box-big red">6</div>
+            </div>
+            <p class="note">same grid, with #5 set to span top to bottom of all the rows giving it full height</p>
+            <pre>
+            .full-row-5 {
+                grid-row: 1 / -1;
+            }
+            </pre>
+            <div id="box-1" class="row grid-three-by-three">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-1 box-big yellow">3</div>
+              <div class="box box-2 box-big blue">4</div>
+              <div class="box box-2 box-big green full-row-5">5</div>
+              <div class="box box-2 box-big red">6</div>
+            </div>
+            <p class="note">same grid, with #5 set to span left to right of all the columns giving it full width</p>
+            <pre>
+            .full-col-5 {
+                grid-column: 1 / -1;
+            }
+            </pre>
+            <div id="box-1" class="row grid-three-by-three">
+              <div class="box box-1 box-big green">1</div>
+              <div class="box box-2 box-big red">2</div>
+              <div class="box box-1 box-big yellow">3</div>
+              <div class="box box-2 box-big blue">4</div>
+              <div class="box box-2 box-big green full-col-5">5</div>
+              <div class="box box-2 box-big red">6</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <p>© Seth Albo 2022 All Rights Reserved</p>
+        <div style="text-align: center">
+          <a href="/">Home</a>
+          <a href="/resources.html">Resources</a>
+          <a href="/jsexamples.html">JS Examples</a>
+        </div>
+      </footer>
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

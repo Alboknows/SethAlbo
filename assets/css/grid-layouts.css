@@ -1,0 +1,38 @@
+.grid-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-two-col-gap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.grid-three-col-gap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.grid-three-row-gap {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.grid-three-by-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.change-5 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+}
+
+.full-col-5 {
+  grid-column: 1 / -1;
+}
+.full-row-5 {
+  grid-row: 1 / -1;
+}

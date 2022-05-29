@@ -1,0 +1,51 @@
+ul {
+  list-style-type: none;
+}
+.row {
+  border: olive 1px dashed;
+  padding: 8px;
+}
+pre {
+  padding: 16px 0 0;
+  background-color: #1f2f48;
+  border-radius: 8px;
+  color: aquamarine;
+}
+.note {
+  font-size: 14px;
+  margin: 32px 0 8px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.box-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  min-width: 75px;
+  min-height: 35px;
+}
+.box-big {
+  min-width: 100px;
+  min-height: 75px;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: #c6c600;
+}
